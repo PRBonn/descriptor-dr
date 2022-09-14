@@ -24,5 +24,5 @@ From the visualization, we can observe similar results as we discussed in the pa
 
 
 ### More experienments on patch pair verification, image matching, and patch retrieval
-(TBD)
+<img src="pics/TFeat-Hpatches.PNG" width="600">
 
