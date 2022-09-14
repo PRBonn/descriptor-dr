@@ -41,7 +41,7 @@ From the visualization, we can observe similar results as we discussed in the pa
 
 
 ### Experiments for patch verification, image matching, and patch retrieval on HPatches dataset
-<img src="pics/SIFT-Hpatches.png" width="600">  <br />
-<img src="pics/MKD-Hpatches.PNG" width="600">  <br />
-<img src="pics/TFeat-Hpatches.PNG" width="600">  <br />
-<img src="pics/HardNet-Hpatches.PNG" width="600">  <br />
+<img src="pics/SIFT-Hpatches.png" width="450">  <br />
+<img src="pics/MKD-Hpatches.PNG" width="450">  <br />
+<img src="pics/TFeat-Hpatches.PNG" width="450">  <br />
+<img src="pics/HardNet-Hpatches.PNG" width="450">  <br />
