@@ -3,7 +3,7 @@
 We propose and evaluate an MLP-based network for descriptor dimensionality reduction and show its superiority over PCA on multiple descriptors in various tasks.
 Developed by [Hao Dong](https://sites.google.com/view/dong-hao/) and [Xieyuanli Chen](https://www.ipb.uni-bonn.de/people/xieyuanli-chen/). 
 
-<img src="pics/overview.png" width="800">
+<img src="pics/overview.png" width="400">
 Overview of our approach. We first compute descriptors of given image patches. Then an MLP-based network is used for dimensionality reduction. We aim to learn an MLP-based projection better than PCA to generate lower-dimensional descriptors.
 
 ## Supplementary
