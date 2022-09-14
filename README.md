@@ -5,6 +5,7 @@
 ### Embedding visualization of the descriptors
 
 <img src="pics/SIFT.svg" width="230"><img src="pics/SIFT-PCA-64.svg" width="230"><img src="pics/SIFT-Ours-SV-64.svg" width="230">  <br />
+<center>a</center><center>a</center><center>a</center>  <br />
 <img src="pics/MKD.svg" width="230"><img src="pics/MKD-PCA-64.svg" width="230"><img src="pics/MKD-Ours-SV-64.svg" width="230">  <br />
 <img src="pics/TFeat.svg" width="230"><img src="pics/TFeat-PCA-64.svg" width="230"><img src="pics/TFeat-Ours-SV-64.svg" width="230">  <br />
 <img src="pics/HardNet.svg" width="230"><img src="pics/HardNet-PCA-64.svg" width="230"><img src="pics/HardNet-Ours-SV-64.svg" width="230">  <br />
