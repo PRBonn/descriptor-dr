@@ -24,5 +24,6 @@ From the visualization, we can observe similar results as we discussed in the pa
 
 
 ### More experienments on patch pair verification, image matching, and patch retrieval
-<img src="pics/TFeat-Hpatches.PNG" width="600">
-
+<img src="pics/MKD-Hpatches.PNG" width="600">  <br />
+<img src="pics/TFeat-Hpatches.PNG" width="600">  <br />
+<img src="pics/HardNet-Hpatches.PNG" width="600">  <br />
