@@ -1,11 +1,16 @@
-# descriptor-dr
+# Learning-Based Dimensionality Reduction for Computing Compact and Effective Local Feature Descriptors
+
+We propose and evaluate an MLP-based network for descriptor dimensionality reduction and show its superiority over PCA on multiple descriptors in various tasks.
+Developed by [Hao Dong](https://sites.google.com/view/dong-hao/) and [Xieyuanli Chen](https://www.ipb.uni-bonn.de/people/xieyuanli-chen/). 
+
+<img src="pics/overview.png" width="800">
+Overview of our approach. We first compute descriptors of given image patches. Then an MLP-based network is used for dimensionality reduction. We aim to learn an MLP-based projection better than PCA to generate lower-dimensional descriptors.
 
 ## Supplementary
 
 ### Embedding visualization of the descriptors
 
 <img src="pics/SIFT.svg" width="230"><img src="pics/SIFT-PCA-64.svg" width="230"><img src="pics/SIFT-Ours-SV-64.svg" width="230">  <br />
-<center>a</center><center>a</center><center>a</center>  <br />
 <img src="pics/MKD.svg" width="230"><img src="pics/MKD-PCA-64.svg" width="230"><img src="pics/MKD-Ours-SV-64.svg" width="230">  <br />
 <img src="pics/TFeat.svg" width="230"><img src="pics/TFeat-PCA-64.svg" width="230"><img src="pics/TFeat-Ours-SV-64.svg" width="230">  <br />
 <img src="pics/HardNet.svg" width="230"><img src="pics/HardNet-PCA-64.svg" width="230"><img src="pics/HardNet-Ours-SV-64.svg" width="230">  <br />
