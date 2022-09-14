@@ -4,7 +4,7 @@
 
 ### Embedding visualization of the descriptors
 
-<img src="pics/SIFT_512_compressed.pdf" width="300">
+<img src="pics/SIFT_512.svg" width="300">
 
 
 
