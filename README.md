@@ -2,9 +2,9 @@
 
 This repository contains the implementation of the paper:
 
-Learning-Based Dimensionality Reduction for Computing Compact and Effective Local Feature Descriptors  
+**Learning-Based Dimensionality Reduction for Computing Compact and Effective Local Feature Descriptors**  
 [Hao Dong](https://sites.google.com/view/dong-hao/), [Xieyuanli Chen](https://www.ipb.uni-bonn.de/people/xieyuanli-chen/), [Mihai Dusmanu](https://dsmn.ml/), [Viktor Larsson](https://vlarsson.github.io/), [Marc Pollefeys](https://www.inf.ethz.ch/personal/pomarc/) and [Cyrill Stachniss](http://www.ipb.uni-bonn.de/people/cyrill-stachniss/)  
-Submitted to the IEEE International Conference on Robotics and Automation (ICRA) 2023. [Link]() to the ArXiv version of the paper (available soon).
+Submitted to the IEEE International Conference on Robotics and Automation (ICRA) 2023. [Link]() to the arXiv version of the paper (available soon).
 
 We propose and evaluate an MLP-based network for descriptor dimensionality reduction and show its superiority over PCA on multiple descriptors in various tasks.
 
@@ -35,12 +35,13 @@ If you use our framework for any academic work, please cite the original [paper]
 <img src="pics/HardNet.svg" width="230"><img src="pics/HardNet-PCA-64.svg" width="230"><img src="pics/HardNet-Ours-SV-64.svg" width="230">  <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HardNet&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HardNet-PCA-64&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HardNet-Ours-SV-64 <br />
 
-We provide the t-SNE embedding visualization of the descriptors on Liberty. We visualize the embeddings of SIFT, MKD, TFeat, and HardNet generated using PCA and supervised methods by mapping high-dimensional descriptors (128 and 64) into 2D using t-SNE visualization. We pass the image patches through the descriptor extractor, followed by PCA or MLPs, to get lower-dimensional descriptors and determine their 2D locations using t-SNE transformation. Finally, we visualize the entire patch at each location.
+We provide the t-SNE embedding visualization of the descriptors on UBC Phototour Liberty. We visualize the embeddings of SIFT, MKD, TFeat, and HardNet generated using PCA and supervised methods by mapping high-dimensional descriptors (128 and 64) into 2D using t-SNE visualization. We pass the image patches through the descriptor extractor, followed by PCA or MLPs, to get lower-dimensional descriptors and determine their 2D locations using t-SNE transformation. Finally, we visualize the entire patch at each location.
 
 From the visualization, we can observe similar results as we discussed in the paper. For SIFT and MKD, the original descriptor space is irregular, and similar and dissimilar features are overlapped. Therefore, PCA projection will keep this irregular structure of the descriptor space. However, after learning a more discriminative representation using triplet loss, similar image patches in the descriptor space are close to each other while dissimilar ones have distances from each other. For TFeat and HardNet, since the outputting space is already optimized for the $\ell_2$ metric, image patches in the descriptor space are already separated well based on their appearance. Therefore, a simple PCA can preserve this distinctive structure and perform on par compared with the learned projection.  
 
 
-### More experienments on patch pair verification, image matching, and patch retrieval
+### Experiments for patch verification, image matching, and patch retrieval on HPatches dataset
+<img src="pics/SIFT-Hpatches.png" width="600">  <br />
 <img src="pics/MKD-Hpatches.PNG" width="600">  <br />
 <img src="pics/TFeat-Hpatches.PNG" width="600">  <br />
 <img src="pics/HardNet-Hpatches.PNG" width="600">  <br />
