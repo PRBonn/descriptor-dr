@@ -4,7 +4,7 @@ This repository contains the implementation of the paper:
 
 **Learning-Based Dimensionality Reduction for Computing Compact and Effective Local Feature Descriptors**  
 [Hao Dong](https://sites.google.com/view/dong-hao/), [Xieyuanli Chen](https://www.ipb.uni-bonn.de/people/xieyuanli-chen/), [Mihai Dusmanu](https://dsmn.ml/), [Viktor Larsson](https://vlarsson.github.io/), [Marc Pollefeys](https://www.inf.ethz.ch/personal/pomarc/) and [Cyrill Stachniss](http://www.ipb.uni-bonn.de/people/cyrill-stachniss/)  
-Submitted to the IEEE International Conference on Robotics and Automation (ICRA) 2023. [Link]() to the arXiv version of the paper (available soon).
+[Link]() to the arXiv version of the paper will be available soon.
 
 We propose and evaluate an MLP-based network for descriptor dimensionality reduction and show its superiority over PCA on multiple descriptors in various tasks.
 
@@ -21,6 +21,9 @@ Coming soon!
 If you use our framework for any academic work, please cite the original [paper]().
 
 > bibtex entry coming soon!
+
+## Localization on Aachen Day-Night v1.1 and InLoc datasets
+<img src="pics/localization.PNG" width="450">
 
 ## Supplementary
 
