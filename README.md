@@ -4,7 +4,7 @@ This repository contains the implementation of the paper:
 
 **Learning-Based Dimensionality Reduction for Computing Compact and Effective Local Feature Descriptors**  
 [Hao Dong](https://sites.google.com/view/dong-hao/), [Xieyuanli Chen](https://www.ipb.uni-bonn.de/people/xieyuanli-chen/), [Mihai Dusmanu](https://dsmn.ml/), [Viktor Larsson](https://vlarsson.github.io/), [Marc Pollefeys](https://www.inf.ethz.ch/personal/pomarc/) and [Cyrill Stachniss](http://www.ipb.uni-bonn.de/people/cyrill-stachniss/)  
-[Link]() to the arXiv version of the paper will be available soon.
+[Link](https://arxiv.org/abs/2209.13586) to the arXiv version of the paper is available.
 
 We propose and evaluate an MLP-based network for descriptor dimensionality reduction and show its superiority over PCA on multiple descriptors in various tasks.
 
@@ -18,9 +18,15 @@ A distinctive representation of image patches in form of features is a key compo
 Coming soon!
 
 ## Citation
-If you use our framework for any academic work, please cite the original [paper]().
+If you use our implementation in your academic work, please cite the corresponding [paper](https://arxiv.org/abs/2209.13586):
 
-> bibtex entry coming soon!
+	@article{dong2022dr,
+	author   = {H. Dong and X. Chen and M. Dusmanu and V. Larsson and M. Pollefeys and C. Stachniss},
+	title    = {{Learning-Based Dimensionality Reduction for Computing Compact and Effective Local Feature Descriptors}},
+	journal  = arxiv,
+	eprint   = {2209.13586},
+	year     = {2022},
+	}
 
 ## Localization on Aachen Day-Night v1.1 and InLoc datasets
 <img src="pics/localization.PNG" width="450">
