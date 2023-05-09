@@ -95,3 +95,10 @@ From the visualization, we can observe similar results as we discussed in the pa
 <img src="pics/MKD-Hpatches.PNG" width="450">  <br />
 <img src="pics/TFeat-Hpatches.PNG" width="450">  <br />
 <img src="pics/HardNet-Hpatches.PNG" width="450">  <br />
+
+
+## Acknowledgment
+We thank greatly for the authors of the following opensource projects:
+
+- [deepcluster](https://github.com/facebookresearch/deepcluster) 
+- [hardnet](https://github.com/DagnyT/hardnet)
