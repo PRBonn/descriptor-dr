@@ -1,0 +1,10 @@
+__pycache__/
+liberty/
+logs/
+models/
+notredame/
+yosemite/
+*.pt
+*.pkl
+*.pth
+*.npz
