@@ -16,7 +16,7 @@ A distinctive representation of image patches in form of features is a key compo
 
 ## Installation
 ```bash
-pip install numpy kornia tqdm torch torchvision scipy faiss tensorboard_logger
+pip install numpy kornia tqdm torch torchvision scipy faiss tensorboard_logger tabulate
 ```
 ## Example
 A simple example for SIFT-SV-64 with pre-trained model:
@@ -76,14 +76,15 @@ Extract descriptors on HPatches dataset and evaluate:
 ```bash
 cd ..
 python hpatches_extract_SIFT_64.py /path/to/HPatches/dataset
-mv SIFT_sv_dim64/ hpatches-benchmark/python/
+mkdir hpatches-benchmark/data/descriptors
+mv SIFT_sv_dim64/ hpatches-benchmark/data/descriptors/
 cd hpatches-benchmark/python/
 python hpatches_eval.py --descr-name=SIFT_sv_dim64 --task=matching --delimiter=","
-python hpatch_results.py --descr=SIFT_sv_dim64 --results-dir=results/ --task=matching
+python hpatches_results.py --descr=SIFT_sv_dim64 --results-dir=results/ --task=matching
 python hpatches_eval.py --descr-name=SIFT_sv_dim64 --task=verification --delimiter=","
-python hpatch_results.py --descr=SIFT_sv_dim64 --results-dir=results/ --task=verification
+python hpatches_results.py --descr=SIFT_sv_dim64 --results-dir=results/ --task=verification
 python hpatches_eval.py --descr-name=SIFT_sv_dim64 --task=retrieval --delimiter=","
-python hpatch_results.py --descr=SIFT_sv_dim64 --results-dir=results/ --task=retrieval
+python hpatches_results.py --descr=SIFT_sv_dim64 --results-dir=results/ --task=retrieval
 ```
 
 
