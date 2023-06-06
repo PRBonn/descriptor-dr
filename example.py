@@ -56,7 +56,7 @@ class Encoder(nn.Module):
 SIFT = kornia.feature.SIFTDescriptor(32, 8, 4, False).cuda()
 device = torch.device('cuda:0')
 n_components=64
-encoder = Encoder(n_components=n_components,hidden=1024)
+encoder = Encoder(n_components=n_components,hidden=512)
 load_model(encoder, 'models/SIFT_sv_dim64.pth', device)
 
 cv2_scale = lambda x: cv2.resize(x, dsize=(32, 32),

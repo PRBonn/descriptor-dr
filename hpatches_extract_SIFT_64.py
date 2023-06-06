@@ -64,7 +64,7 @@ class hpatches_sequence:
 seqs = glob.glob(sys.argv[1]+'/*')
 seqs = [os.path.abspath(p) for p in seqs]     
 
-hidden=1024
+hidden=512
 descr_name = 'SIFT_sv_dim64'
 SIFT = kornia.feature.SIFTDescriptor(32, 8, 4, False).cuda()
 device = torch.device('cuda:0')
