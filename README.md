@@ -18,6 +18,12 @@ A distinctive representation of image patches in form of features is a key compo
 ```bash
 pip install numpy kornia tqdm torch torchvision scipy faiss tensorboard_logger
 ```
+## Example
+A simple example for SIFT-SV-64 with pre-trained model:
+```bash
+python example.py
+```
+
 ## Training
 ### PCA Reduction
 For SIFT:
@@ -58,6 +64,29 @@ For HardNet:
 ```bash
 python dr_sv_HardNet.py
 ```
+
+### Evaluate on HPatches dataset
+Download HPatches dataset and benchmark:
+```bash
+git clone https://github.com/hpatches/hpatches-benchmark.git
+cd hpatches-benchmark/
+sh download.sh hpatches
+```
+Extract descriptors on HPatches dataset and evaluate:
+```bash
+cd ..
+python hpatches_extract_SIFT_64.py /path/to/HPatches/dataset
+mv SIFT_sv_dim64/ hpatches-benchmark/python/
+cd hpatches-benchmark/python/
+python hpatches_eval.py --descr-name=SIFT_sv_dim64 --task=matching --delimiter=","
+python hpatch_results.py --descr=SIFT_sv_dim64 --results-dir=results/ --task=matching
+python hpatches_eval.py --descr-name=SIFT_sv_dim64 --task=verification --delimiter=","
+python hpatch_results.py --descr=SIFT_sv_dim64 --results-dir=results/ --task=verification
+python hpatches_eval.py --descr-name=SIFT_sv_dim64 --task=retrieval --delimiter=","
+python hpatch_results.py --descr=SIFT_sv_dim64 --results-dir=results/ --task=retrieval
+```
+
+
 
 ## Citation
 If you use our implementation in your academic work, please cite the corresponding [paper](https://arxiv.org/abs/2209.13586):
