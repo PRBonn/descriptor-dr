@@ -485,5 +485,5 @@ if __name__ == '__main__':
     train_loader, test_loaders = create_loaders(load_random_triplets = triplet_flag)
     main(train_loader, test_loaders, model, logger, file_logger)
 
-    file_name = 'models/triplet_' + args.descriptor + '_' + str(args.reduce_dim) + '_' + args.dataset_names + '.pth'
+    file_name = 'models/' + args.descriptor + '_sv_dim' + str(args.reduce_dim) + '.pth'
     torch.save(model.state_dict(), file_name)
